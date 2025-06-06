@@ -351,18 +351,11 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        set -xe  # x: stampa i comandi; e: fallisce subito se c'è errore
-
-        echo "::group::Install dependencies"
         sudo apt-get update
         sudo apt-get install -y libsdl1.2-dev bison flex
-        echo "::endgroup::"
-
-        echo "::group::Build project"
-        make clean || echo "make clean failed"
-        make defconfig || echo "make defconfig failed"
-        make all || echo "make all failed"
-        echo "::endgroup::
+        make clean
+        make defconfig
+        make all
 
 
     - name: Perform CodeQL Analysis
