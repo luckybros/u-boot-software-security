@@ -1,7 +1,6 @@
 /**
  * @name Taint analysis from network to memcpy
  * @kind problem
- * @pattern source, sink, string
  */
 
 
