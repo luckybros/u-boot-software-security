@@ -1,5 +1,5 @@
 name: custom-queries
 version: 1.0.0
-description: "Pack di query personalizzate"
+description: "Pacchetto di query personalizzate in C/C++"
 dependencies:
-  codeql/cpp-all: "*"
+  codeql/cpp-queries: "*"
