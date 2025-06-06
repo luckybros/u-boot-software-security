@@ -101,5 +101,4 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
-      with:
-        queries: ./custom-queries/my-query.ql
+        
