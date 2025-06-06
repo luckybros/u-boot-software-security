@@ -1,7 +1,9 @@
 /**
  * @name Taint analysis from network to memcpy
  * @kind problem
+ * @pattern sink, source, sink, string
  */
+
 
 import cpp
 import semmle.code.cpp.dataflow.TaintTracking
