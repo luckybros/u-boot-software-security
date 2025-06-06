@@ -1,7 +1,7 @@
 /**
  * @name Taint analysis from network to memcpy
  * @kind problem
- * @pattern sink, source, sink, string
+ * @pattern sink, source, string
  */
 
 
@@ -41,4 +41,4 @@ import MyTaint::PathGraph
  
 from MyTaint::PathNode source, MyTaint::PathNode sink
 where MyTaint::flowPath(source, sink) 
-select sink, source, sink, "Network byte swap flows to memcpy"
+select sink, source, "Network byte swap flows to memcpy"
