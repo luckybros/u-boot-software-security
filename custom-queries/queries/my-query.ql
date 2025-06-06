@@ -1,6 +1,6 @@
 /**
  * @name Taint analysis from network to memcpy
- * @kind path_problem
+ * @kind problem
  */
 
 import cpp
